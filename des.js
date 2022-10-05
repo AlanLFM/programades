@@ -9,7 +9,7 @@ function leerArchivo(){
         var texto=this.result;//texto leido
         console.log(texto)
         var plainText=this.result;
-        var key=document.getElementById("clave");
+        var key=document.getElementById("clave").value;
 
     console.log("Plain text: ", plainText);
     var base64Coded = window.btoa(plainText);
