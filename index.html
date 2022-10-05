@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="des.js"></script>
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.rawgit.com/CryptoStore/crypto-js/3.1.2/build/rollups/tripledes.js"></script>
+        <title>DES</title>
+    </head>
+    <body>
+        <center><h1>Cifrado DES</h1></center>
+        <p>Ingrese el archivo txt que desea Cifrar</p>
+        <input type="file" id="file">
+        <br><br>
+        <label>Ingrese la clave que desea usar</label>
+        <input class="text" type="text" maxlength="8" minlength="8" id="clave">
+        <br><br>
+        <input type="button" onclick="leerArchivo()" value="Enviar" class="inputfile"/>
+        <br>
+        <br>
+        <p>Texto que venía dentro de tu txt:</p><br>
+        <textarea align="center" id="Descencriptado" cols="30" rows="10"></textarea>
+        
+        <p>Texto encriptado con DES:</p><br>
+        <center><textarea id="Encriptado" cols="30" rows="10"></textarea></center><br>
+                
+
+    </body>
+</html>
